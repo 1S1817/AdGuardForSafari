@@ -5,7 +5,7 @@
       "gypfile": true,
       "main": "index.js",
       "dependencies": {
-        "nan": "^2.3.3",
-        "bindings": "^1.2.1"
+        "nan": "^2.18.0",
+        "bindings": "^1.5.0"
       }
 }

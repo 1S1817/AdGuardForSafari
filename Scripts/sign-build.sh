@@ -32,8 +32,8 @@ codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "${RESOURCES}/app-arm64.as
 codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib" || exit 1
 codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib" || exit 1
 codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib" || exit 1
-codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Libraries/libswiftshader_libEGL.dylib" || exit 1
-codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Libraries/libswiftshader_libGLESv2.dylib" || exit 1
+#codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Libraries/libswiftshader_libEGL.dylib" || exit 1
+#codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Libraries/libswiftshader_libGLESv2.dylib" || exit 1
 codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib" || exit 1
 codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework/Versions/A/Electron Framework" || exit 1
 codesign $SIGN_OPTIONS --sign "${CODE_SIGN_IDENTITY}" "$FRAMEWORKS/Electron Framework.framework" || exit 1
