@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
                 break;
             }
         }
-        
+
         if (!alreadyRunning) {
             NSString *appPath = [[[[[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent] stringByDeletingLastPathComponent]  stringByDeletingLastPathComponent] stringByDeletingLastPathComponent];
             // get to the waaay top. Goes through LoginItems, Library, Contents, Applications
@@ -29,14 +29,16 @@ int main(int argc, const char * argv[]) {
             }
             else {
                 NSURL *urlToOpen = [NSURL URLWithString:@"agsafari://launchInBackground"];
-                
+                NSWorkspaceOpenConfiguration *config = [NSWorkspaceOpenConfiguration configuration];
+                config.addsToRecentItems = NO;
+
                 NSError *error = nil;
                 [NSWorkspace.sharedWorkspace openURLs:@[urlToOpen]
                                  withApplicationAtURL:url
                                               options:0
-                                        configuration:@{ @"addsToRecentItems" : @NO }
+                                        configuration:config
                                                 error:&error];
-                
+
                 if (error) {
                     NSLog(@"AdGuard For Safari Login Helper: An error occurred: %@", error.localizedDescription);
                 } else {
