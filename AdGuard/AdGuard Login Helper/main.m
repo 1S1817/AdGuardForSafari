@@ -33,8 +33,8 @@ int main(int argc, const char * argv[]) {
                 NSError *error = nil;
                 [NSWorkspace.sharedWorkspace openURLs:@[urlToOpen]
                                  withApplicationAtURL:url
-                                              options:NSWorkspaceLaunchWithoutAddingToRecents
-                                        configuration:@{}
+                                              options:0
+                                        configuration:@{ @"addsToRecentItems" : @NO }
                                                 error:&error];
                 
                 if (error) {
