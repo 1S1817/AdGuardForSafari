@@ -1,5 +1,5 @@
 /**
- * @adguard/extended-css - v2.0.52 - Fri Apr 14 2023
+ * @adguard/extended-css - v2.0.56 - Tue Nov 28 2023
  * https://github.com/AdguardTeam/ExtendedCss#homepage
  * Copyright (c) 2023 AdGuard. Licensed GPL-3.0
  */
