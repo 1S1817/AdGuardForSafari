@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Updated [`@adguard/scriptlets`] to v1.9.96
+- Updated [`@adguard/extended-css`] to v2.0.56
 
 
 ## [1.11.16] - 2023-11-21
